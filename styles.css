@@ -42,22 +42,26 @@ body {
   border: 3px solid var(--secondary-color);
   margin-top: 30px;
   padding: 30px;
+  height: 100vh;
 }
 
 .flexContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   /*(распределенное выравнивание) space family: */
   /* space-around, space-between, space-evenly */
   /* (позиционное выравнивание)other: center, flex-end, flex-start(default) */
   /* 'start' and 'end' works only with property 'writing-mode'*/
+  align-items: stretch;
+  flex-direction: row; /*default*/
+  /* other values: row-reverse, column, column-reverse */
 }
 
 /* CHILD */
 
 .child {
   width: 200px;
-  height: 200px;
+  /* height: 200px; */
 
   padding: 30px;
 
