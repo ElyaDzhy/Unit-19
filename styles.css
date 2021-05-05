@@ -47,7 +47,10 @@ body {
 .flexContainer {
   display: flex;
   justify-content: space-between;
+  /*(распределенное выравнивание) space family: */
   /* space-around, space-between, space-evenly */
+  /* (позиционное выравнивание)other: center, flex-end, flex-start(default) */
+  /* 'start' and 'end' works only with property 'writing-mode'*/
 }
 
 /* CHILD */
