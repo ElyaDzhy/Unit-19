@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --primary-color: rgb(160, 151, 167);
+  --secondary-color: rgb(71, 59, 59);
+
+  --details-color: rgb(148, 34, 34);
+  --details-night-color: rgb(85, 14, 81);
+  --additional-color: rgb(2, 94, 2);
+
+  --primary-font-color: rgb(255, 123, 0);
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  background-color: var(--primary-color);
+}
+
+.head {
+  height: 10vh;
+  padding-top: 2vh;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-font-color);
+
+  font-size: 5vh;
+}
+
+.head:hover {
+  cursor: pointer;
+  background-color: var(--details-night-color);
+  border-bottom: 1px solid var(--details-color);
+  /* border-bottom: 1px solid white; */
+}
+
+/* PARENT */
+
+.parent {
+  border: 3px solid var(--secondary-color);
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  /* space-around, space-between, space-evenly */
+}
+
+/* CHILD */
+
+.child {
+  width: 200px;
+  height: 200px;
+
+  padding: 30px;
+
+  font-size: 20px;
+  border: 2px solid var(--details-color);
+  color: var(--details-night-color);
+}
+
+/* .flexItem {
+} */
